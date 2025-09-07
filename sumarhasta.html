@@ -1,0 +1,30 @@
+<script>
+    /*
+    1.declare una variable llamada numero.
+    2.cree una funcion llamada sumarhasta
+    que reciba un numero como parametro.
+    3.dentro de la funcion use un bucle 
+    para sumar todos 1 hasta 
+    el numero que se reciba como parametro.
+    4.La funcion debe regresar la suma total
+     y mostrar la suma total y mostrar  la consola.
+     */
+    //http://goo.su/WXbHM
+
+   var numero = 5;
+
+function sumarhasta(numero) {
+    let suma = 0;
+    for (let i = 1; i <= numero; i++) {
+        suma += i;
+    }
+    return suma;
+}
+
+var resultado = sumarhasta(numero);
+console.log("La suma total es: " + resultado);
+
+
+
+
+</script>
