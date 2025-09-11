@@ -8,23 +8,30 @@ lo siguiente:
     Esta funcion debe recorrer la lista de nombres y mostrarlos
     en la consola uno a uno.
 3.Llama a la funcion imprimirNombres para mostrar todos los nombres.*/
-let grupo = [
-      {Nombre:"Juan", Apellido:"Perez"},
-      {Nombre:"Pedro", Apellido:"Gomez"},
-      {Nombre:"Luis", Apellido:"Won"},
-      {Nombre:"Francisco", Apellido:"Hi"},
-      {Nombre:"Isela", Apellido:"Martinez"},
-      {Nombre:"Ana", Apellido:"Lopez"},
-      {Nombre:"Julia", Apellido:"Hernandez"},
-      {Nombre:"Juana", Apellido:"Velazquez"},
-      {Nombre:"Martin", Apellido:"Martin"},
-      {Nombre:"Maria", Apellido:"Guerra"}
-    ];
 
-    function imprimirNombres(lista) {
-      for (let persona of lista) {
-        console.log(persona.Nombre + "               " + persona.Apellido); 
+    let grupo =[{Nombre:"Juan",Apellido:"Perez"},
+                {Nombre:"Pedro",Apellido:"Gomez"},
+                {Nombre:"Luis",Apellido:"Won"},
+                {Nombre:"Francisco",Apellido:"Hi"},
+                {Nombre:"Isela",Apellido:"Matinez"},
+                {Nombre:"Ana",Apellido:"Lopez"},
+                {Nombre:"Julia",Apellido:"Hernandez"},
+                {Nombre:"Juana",Apellido:"Velazquez"},
+                {Nombre:"Martin",Apellido:"Martin"},
+                {Nombre:"Maria",Apellido:"Guerra"}]
+
+   function imprimirNombres() {
+      let lista = document.getElementById("lista");
+      lista.innerHTML = "";
+
+      for(let i = 0; 1 < grupo.length; i++){
+        let li = document.createElement("li");
+        li.textContent = grupo[i].Nombre + "  "+ grupo[i].Apellido;
+        lista.appendChild(li);
       }
+
+      
     }
 
-    imprimirNombres(grupo);
+   
+   // imprimirNombres(grupo);
